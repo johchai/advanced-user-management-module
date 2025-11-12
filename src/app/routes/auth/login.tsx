@@ -1,3 +1,3 @@
-export const Login = () => {
+export const AuthLogin = () => {
   return <div>login</div>;
 };
