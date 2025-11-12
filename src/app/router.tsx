@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 
+import LoginPage from "@/app/routes/auth/login";
 import { Navigate, RouterProvider, createBrowserRouter } from "react-router";
 
-import { AuthLogin } from "./routes/auth/login";
 import AppRoot, { ErrorBoundary as AppRootErrorBoundary } from "./routes/root";
 import { UsersRoot } from "./routes/users/root";
 
@@ -14,7 +14,7 @@ const createAppRouter = () =>
     },
     {
       path: "/auth",
-      children: [{ path: "login", element: <AuthLogin /> }]
+      children: [{ path: "login", element: <LoginPage /> }]
     },
     {
       path: "/users",
